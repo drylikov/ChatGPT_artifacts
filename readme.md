@@ -1,4 +1,4 @@
-# chatgpt-artifacts
+# ChatGPT artifacts
 
 Bring Claude's Artifacts feature to ChatGPT
 
