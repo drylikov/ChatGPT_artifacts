@@ -11,7 +11,7 @@ https://github.com/ozgrozer/chatgpt-artifacts/assets/651938/abc68e48-2a85-4cb8-a
 Clone this repository
 
 ```
-git clone https://github.com/drylikov/chatgpt-artifacts.git
+git clone https://github.com/drylikov/ChatGPT_artifacts.git
 ```
 
 Install dependencies
