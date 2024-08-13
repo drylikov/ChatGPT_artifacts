@@ -1,0 +1,90 @@
+@import '@styles/mixins';
+
+.codeBlocksWrapper {
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  display: none;
+  overflow: auto;
+  position: fixed;
+  padding: 20px 20px 20px 10px;
+  &.show {
+    display: block;
+  }
+
+  .tabHeader {
+    gap: 5px;
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #393937;
+    border: 1px solid #3E3E38;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .tabItem {
+      gap: 5px;
+      color: #fff;
+      height: 30px;
+      border: none;
+      display: flex;
+      cursor: pointer;
+      padding: 0 10px;
+      font-size: 13px;
+      font-weight: bold;
+      align-items: center;
+      border-radius: 10px;
+      background-color: #2F2F2C;
+      text-transform: uppercase;
+      &.active {
+        background-color: #21201C;
+      }
+
+      .spinner {
+        @include spinner($widthAndHeight: 10px, $time: 600ms);
+      }
+    }
+  }
+
+  .tabContent {
+    .tabItem {
+      padding: 20px;
+      font-size: 16px;
+      margin: 0 !important;
+      margin: 0 !important;
+      white-space: pre-wrap;
+      border: 1px solid #3E3E38;
+      border-top: none;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-left-radius: 10px !important;
+      border-bottom-right-radius: 10px !important;
+      &.preview {
+        background-color: #fff;
+      }
+      &.hidden {
+        width: 1px;
+        padding: 0;
+        height: 1px;
+        margin: -1px;
+        border-width: 0;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        clip: rect(0, 0, 0, 0);
+      }
+      &.active {
+        clip: auto;
+        width: auto;
+        height: auto;
+        margin: initial;
+        position: static;
+        padding: initial;
+        overflow: visible;
+        white-space: normal;
+      }
+    }
+  }
+}

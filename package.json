@@ -1,0 +1,30 @@
+{
+  "license": "GPL-3.0",
+  "name": "chatgpt-artifacts",
+  "description": "Bring Claude's Artifacts feature to ChatGPT",
+  "author": {
+    "name": "Ozgur Ozer",
+    "email": "ozgr@live.com",
+    "url": "https://github.com/ozgrozer"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "nodemon ./server/init.js",
+    "start": "NODE_ENV=production node ./server/init.js"
+  },
+  "dependencies": {
+    "next": "^14.2.4",
+    "openai": "^4.52.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "sass": "^1.77.6",
+    "standard": "^17.1.0"
+  }
+}
